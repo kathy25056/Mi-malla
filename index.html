@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Malla Interactiva</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva Psicología UNAB</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Malla Interactiva</h1>
+  <header>
+    <h1>Malla Interactiva - Psicología UNAB</h1>
+  </header>
 
-  <div class="semestre">
-    <h2>1er Semestre</h2>
-    <ul>
-      <li class="ramo aprobado">Matemática I</li>
-      <li class="ramo">Introducción a la Psicología</li>
-      <li class="ramo">Comunicación Oral y Escrita</li>
-    </ul>
-  </div>
+  <main>
+    <section class="semester" id="sem1">
+      <h2 onclick="toggle('sem1-courses')">Semestre I ⮟</h2>
+      <ul id="sem1-courses" class="courses hidden">
+        <li>Historia y Fundamentos de la Psicología</li>
+        <li>Tópicos de Neurobiología</li>
+        <li>Psicología y Sociedad</li>
+        <li>Psicología y Epistemología</li>
+        <li>Inglés I</li>
+        <li>Habilidades Comunicativas</li>
+        <li>Eje de Formación Interdisciplinaria I</li>
+      </ul>
+    </section>
 
-  <div class="semestre">
-    <h2>2do Semestre</h2>
-    <ul>
-      <li class="ramo">Biología General</li>
-      <li class="ramo">Historia de la Psicología</li>
-      <li class="ramo">Estadística I</li>
-    </ul>
-  </div>
+    <section class="semester" id="sem2">
+      <h2 onclick="toggle('sem2-courses')">Semestre II ⮟</h2>
+      <ul id="sem2-courses" class="courses hidden">
+        <li>Sistemas Psicológicos</li>
+        <li>Procesos Psicológicos y Neurociencias</li>
+        <li>Psicoanálisis I</li>
+        <li>Psicología del Desarrollo I</li>
+        <li>Investigación I</li>
+        <li>Inglés II</li>
+        <li>Razonamiento Científico y TICs</li>
+      </ul>
+    </section>
+
+    <!-- Agrega los otros semestres copiando el mismo formato -->
+  </main>
+
+  <footer>
+    <p>Creado por una estudiante de Psicología UNAB</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
