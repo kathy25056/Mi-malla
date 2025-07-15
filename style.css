@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.semestre {
+  margin-bottom: 30px;
+}
+
+.ramo {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.aprobado {
+  background-color: #a8e6a2;
+}
